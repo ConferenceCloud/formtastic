@@ -196,6 +196,7 @@ module Formtastic
       def extra_input_html_options
         {
           :multiple => multiple?,
+          :class => "select2-input"
           :name => (multiple? && Rails::VERSION::MAJOR >= 3) ? input_html_options_name_multiple : input_html_options_name
         }
         
